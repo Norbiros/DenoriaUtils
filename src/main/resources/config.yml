@@ -1,0 +1,30 @@
+#
+# DenoriaMMO
+# Plugin dla servera Denoria.pl autorstwa Norbiros
+#
+
+# Ustaw ile EXP do MMOCore zdobywa się, za robienie napojów w Brewery
+# Ustawienie default, to formuła, która używana jest do napojów, gdzie niezdefiniowana jest inna formuła
+# Jako id, używaj id zdefiniowanego w Brewery
+#
+# Możesz używać placeholderów jak:
+# %difficulty% - trudność zrobienia napoju (ustawiane w Brewery)
+# %quality% - jak dobrze napój został przygotowany
+# %default% - formuła ustawiona jako 'brewery.default'
+brewery:
+  # Inny rodzaj liczenia exp
+  - rum: '%difficulty% / 2 + %quality% * 7.5'
+  # Dwa razy więcej expa
+  - vodka: '%default% * 2'
+  - default: 'random(5, 10) + %difficulty% * 0.75 + %quality% * 3'
+
+# Nazwa profesji z MMOCore
+brewery-profession-name: 'brewery'
+
+# Przy pierwszym wejściu na server ta komenda zostanie wykonana przez każdego gracza
+# Podaj komendę bez '/' na początku
+first-join-command: 'class'
+
+# Nie zmieniaj tego, jeśli nie jesteś pewien!
+# Może to zniszczyć całą konfigurację pluginu
+config-version: '1.1'

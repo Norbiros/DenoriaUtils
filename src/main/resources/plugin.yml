@@ -1,0 +1,11 @@
+name: DenoriaMMO
+version: '${version}'
+main: dev.norbiros.denoriammo.DenoriaMMO
+api-version: '1.19'
+authors: [Norbiros]
+depend:
+  - MMOCore
+  - MythicLib
+  - Lands
+  - Brewery
+  - PlaceholderAPI

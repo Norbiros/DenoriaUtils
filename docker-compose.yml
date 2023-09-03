@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  minecraft:
+    image: marctv/minecraft-papermc-server:1.19
+    restart: "no"
+    environment:
+      PUID: 1001
+      PGID: 1001
+      MEMORYSIZE: 1500M
+      JAVAFLAGS: "-Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=mcflags.emc.gs -Dcom.mojang.eula.agree=true -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
+    ports:
+      - "25565:25565"
+      - "8163:8163"
+      - "5005:5005"
+    volumes:
+      - ./papermc-server:/data
+      - ./target/DenoriaMMO-0.1.0.jar:/data/plugins/DenoriaMMO.jar
+      - ./lib/Brewery.jar:/data/plugins/Brewery.jar
+      - ./lib/MMOCore.jar:/data/plugins/MMOCore.jar
+      - ./lib/MythicLib.jar:/data/plugins/MythicLib.jar
+      - ./lib/PlaceholderAPI.jar:/data/plugins/PlaceholderAPI.jar
+      - ./lib/Lands.jar:/data/plugins/Lands.jar
+    stdin_open: true
+    tty: true
