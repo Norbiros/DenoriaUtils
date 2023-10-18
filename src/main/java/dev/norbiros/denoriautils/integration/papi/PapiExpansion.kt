@@ -1,22 +1,22 @@
-package dev.norbiros.denoriammo.integration.papi
+package dev.norbiros.denoriautils.integration.papi
 
-import dev.norbiros.denoriammo.integration.papi.placeholders.TopNationBalancePlaceholder
+import dev.norbiros.denoriautils.integration.papi.placeholders.TopNationBalancePlaceholder
 import me.clip.placeholderapi.expansion.PlaceholderExpansion
 import org.bukkit.OfflinePlayer
-import dev.norbiros.denoriammo.plugin as DenoriaMMO
+import dev.norbiros.denoriautils.plugin as DenoriaUtils
 
 class PapiExpansion : PlaceholderExpansion() {
 
     override fun getIdentifier(): String {
-        return DenoriaMMO.description.name
+        return DenoriaUtils.pluginMeta.name
     }
 
     override fun getAuthor(): String {
-        return DenoriaMMO.description.authors.first()
+        return DenoriaUtils.pluginMeta.authors.first()
     }
 
     override fun getVersion(): String {
-        return DenoriaMMO.description.version
+        return DenoriaUtils.pluginMeta.version
     }
 
     override fun onRequest(player: OfflinePlayer, id: String): String? {

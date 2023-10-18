@@ -14,7 +14,7 @@ services:
       - "5005:5005"
     volumes:
       - ./papermc-server:/data
-      - ./target/DenoriaMMO-0.1.0.jar:/data/plugins/DenoriaMMO.jar
+      - ./target/DenoriaUtils-0.1.0.jar:/data/plugins/DenoriaUtils.jar
       - ./lib/Brewery.jar:/data/plugins/Brewery.jar
       - ./lib/MMOCore.jar:/data/plugins/MMOCore.jar
       - ./lib/MythicLib.jar:/data/plugins/MythicLib.jar

@@ -1,8 +1,8 @@
-package dev.norbiros.denoriammo.integration.lands
+package dev.norbiros.denoriautils.integration.lands
 
 
-import dev.norbiros.denoriammo.integration.PluginIntegration
-import dev.norbiros.denoriammo.plugin
+import dev.norbiros.denoriautils.integration.PluginIntegration
+import dev.norbiros.denoriautils.plugin
 import me.angeschossen.lands.api.LandsIntegration
 import me.angeschossen.lands.api.nation.Nation
 

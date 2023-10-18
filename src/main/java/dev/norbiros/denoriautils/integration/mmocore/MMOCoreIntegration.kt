@@ -1,8 +1,8 @@
-package dev.norbiros.denoriammo.integration.mmocore
+package dev.norbiros.denoriautils.integration.mmocore
 
 
-import dev.norbiros.denoriammo.integration.PluginIntegration
-import dev.norbiros.denoriammo.utils.ConfigUtils
+import dev.norbiros.denoriautils.integration.PluginIntegration
+import dev.norbiros.denoriautils.utils.ConfigUtils
 import net.Indyuce.mmocore.MMOCore
 import net.Indyuce.mmocore.api.player.PlayerData
 import net.Indyuce.mmocore.experience.EXPSource

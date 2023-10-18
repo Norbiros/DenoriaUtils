@@ -1,17 +1,17 @@
-package dev.norbiros.denoriammo
+package dev.norbiros.denoriautils
 
-import dev.norbiros.denoriammo.integration.PluginIntegration
-import dev.norbiros.denoriammo.integration.lands.LandsIntegration
-import dev.norbiros.denoriammo.integration.mmocore.MMOCoreIntegration
-import dev.norbiros.denoriammo.integration.papi.PapiIntegration
-import dev.norbiros.denoriammo.listeners.InventoryListener
-import dev.norbiros.denoriammo.listeners.PlayerListener
-import dev.norbiros.denoriammo.utils.ConfigUtils
+import dev.norbiros.denoriautils.integration.PluginIntegration
+import dev.norbiros.denoriautils.integration.lands.LandsIntegration
+import dev.norbiros.denoriautils.integration.mmocore.MMOCoreIntegration
+import dev.norbiros.denoriautils.integration.papi.PapiIntegration
+import dev.norbiros.denoriautils.listeners.InventoryListener
+import dev.norbiros.denoriautils.listeners.PlayerListener
+import dev.norbiros.denoriautils.utils.ConfigUtils
 import org.bukkit.plugin.java.JavaPlugin
 import org.lupus.commands.core.scanner.Scanner
 import java.util.logging.Level
 
-class DenoriaMMO : JavaPlugin() {
+class DenoriaUtils : JavaPlugin() {
 
     private val integrations: List<PluginIntegration> = listOf(
         PapiIntegration,
@@ -44,14 +44,14 @@ class DenoriaMMO : JavaPlugin() {
         log("Registered listeners!")
 
         log("Started loading commands...")
-        Scanner(this).scan("dev.norbiros.denoriammo.commands", true)
+        Scanner(this).scan("dev.norbiros.denoriautils.commands", true)
         log("Finished loading commands")
 
-        log("Successfully finished loading DenoriaMMO!")
+        log("Successfully finished loading DenoriaUtils!")
     }
 
     override fun onDisable() {
-        log("Disabled DenoriaMMO!")
+        log("Disabled DenoriaUtils!")
     }
 }
 
@@ -67,4 +67,4 @@ fun severeLog(message: String) {
     plugin.logger.log(Level.SEVERE, message)
 }
 
-lateinit var plugin: DenoriaMMO
+lateinit var plugin: DenoriaUtils

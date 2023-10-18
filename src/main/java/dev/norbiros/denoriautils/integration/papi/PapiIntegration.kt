@@ -1,6 +1,6 @@
-package dev.norbiros.denoriammo.integration.papi
+package dev.norbiros.denoriautils.integration.papi
 
-import dev.norbiros.denoriammo.integration.PluginIntegration
+import dev.norbiros.denoriautils.integration.PluginIntegration
 
 
 object PapiIntegration : PluginIntegration {

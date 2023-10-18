@@ -1,6 +1,6 @@
-name: DenoriaMMO
+name: DenoriaUtils
 version: '${version}'
-main: dev.norbiros.denoriammo.DenoriaMMO
+main: dev.norbiros.denoriautils.DenoriaUtils
 api-version: '1.19'
 authors: [Norbiros]
 depend:

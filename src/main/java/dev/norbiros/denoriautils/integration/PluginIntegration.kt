@@ -1,4 +1,4 @@
-package dev.norbiros.denoriammo.integration
+package dev.norbiros.denoriautils.integration
 
 interface PluginIntegration {
     val name: String

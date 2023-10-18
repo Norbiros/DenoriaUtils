@@ -1,4 +1,4 @@
-package dev.norbiros.denoriammo.integration.papi
+package dev.norbiros.denoriautils.integration.papi
 
 import org.bukkit.OfflinePlayer
 

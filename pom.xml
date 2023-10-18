@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.norbiros</groupId>
-    <artifactId>DenoriaMMO</artifactId>
+    <artifactId>DenoriaUtils</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
 
-    <name>DenoriaMMO</name>
+    <name>DenoriaUtils</name>
 
     <properties>
         <java.version>17</java.version>
@@ -44,7 +44,7 @@
                     <relocations>
                         <relocation>
                             <pattern>dev.dejvokep.boostedyaml</pattern>
-                            <shadedPattern>dev.norbiros.denoriammo.libs</shadedPattern>
+                            <shadedPattern>dev.norbiros.denoriautils.libs</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

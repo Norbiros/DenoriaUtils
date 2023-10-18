@@ -1,8 +1,8 @@
-package dev.norbiros.denoriammo.listeners
+package dev.norbiros.denoriautils.listeners
 
-import dev.norbiros.denoriammo.plugin
-import dev.norbiros.denoriammo.utils.AsyncUtil
-import dev.norbiros.denoriammo.utils.ConfigUtils
+import dev.norbiros.denoriautils.plugin
+import dev.norbiros.denoriautils.utils.AsyncUtil
+import dev.norbiros.denoriautils.utils.ConfigUtils
 import org.bukkit.NamespacedKey
 import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority

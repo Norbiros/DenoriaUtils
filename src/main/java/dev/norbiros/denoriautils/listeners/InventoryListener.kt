@@ -1,14 +1,14 @@
-package dev.norbiros.denoriammo.listeners
+package dev.norbiros.denoriautils.listeners
 
 import com.dre.brewery.Barrel
 import com.dre.brewery.Brew
 import com.dre.brewery.filedata.BConfig
 import com.dre.brewery.lore.BrewLore
-import dev.norbiros.denoriammo.integration.mmocore.MMOCoreIntegration
-import dev.norbiros.denoriammo.plugin
-import dev.norbiros.denoriammo.utils.AsyncUtil
-import dev.norbiros.denoriammo.utils.ConfigUtils
-import dev.norbiros.denoriammo.utils.FormulaParser
+import dev.norbiros.denoriautils.integration.mmocore.MMOCoreIntegration
+import dev.norbiros.denoriautils.plugin
+import dev.norbiros.denoriautils.utils.AsyncUtil
+import dev.norbiros.denoriautils.utils.ConfigUtils
+import dev.norbiros.denoriautils.utils.FormulaParser
 import org.bukkit.Material
 import org.bukkit.NamespacedKey
 import org.bukkit.entity.Player

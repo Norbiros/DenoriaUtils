@@ -1,4 +1,4 @@
-package dev.norbiros.denoriammo.utils
+package dev.norbiros.denoriautils.utils
 
 import bsh.EvalError
 import bsh.Interpreter

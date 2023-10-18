@@ -1,4 +1,4 @@
-package dev.norbiros.denoriammo.utils
+package dev.norbiros.denoriautils.utils
 
 import dev.dejvokep.boostedyaml.YamlDocument
 import dev.dejvokep.boostedyaml.dvs.Pattern
@@ -8,8 +8,8 @@ import dev.dejvokep.boostedyaml.settings.dumper.DumperSettings
 import dev.dejvokep.boostedyaml.settings.general.GeneralSettings
 import dev.dejvokep.boostedyaml.settings.loader.LoaderSettings
 import dev.dejvokep.boostedyaml.settings.updater.UpdaterSettings
-import dev.norbiros.denoriammo.logWarning
-import dev.norbiros.denoriammo.plugin
+import dev.norbiros.denoriautils.logWarning
+import dev.norbiros.denoriautils.plugin
 import java.io.File
 import java.io.IOException
 

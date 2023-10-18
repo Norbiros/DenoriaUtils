@@ -1,7 +1,7 @@
-package dev.norbiros.denoriammo.integration.papi.placeholders
+package dev.norbiros.denoriautils.integration.papi.placeholders
 
-import dev.norbiros.denoriammo.integration.lands.LandsIntegration
-import dev.norbiros.denoriammo.integration.papi.Placeholder
+import dev.norbiros.denoriautils.integration.lands.LandsIntegration
+import dev.norbiros.denoriautils.integration.papi.Placeholder
 import org.bukkit.OfflinePlayer
 
 object TopNationBalancePlaceholder : Placeholder {

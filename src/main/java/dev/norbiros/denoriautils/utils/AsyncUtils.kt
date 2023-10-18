@@ -1,6 +1,6 @@
-package dev.norbiros.denoriammo.utils
+package dev.norbiros.denoriautils.utils
 
-import dev.norbiros.denoriammo.plugin
+import dev.norbiros.denoriautils.plugin
 import org.bukkit.scheduler.BukkitRunnable
 
 
