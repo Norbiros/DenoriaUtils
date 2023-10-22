@@ -75,4 +75,8 @@ object ConfigUtils {
     fun getFirstJoinCommand(): String {
         return config?.getString("first-join-command") ?: ""
     }
+
+    fun getFirstJoinCommandStatus(): Boolean {
+        return config?.getBoolean("enable-first-join-command") ?: false
+    }
 }
