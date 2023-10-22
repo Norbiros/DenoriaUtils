@@ -7,16 +7,15 @@ import dev.norbiros.denoriautils.integration.papi.PapiIntegration
 import dev.norbiros.denoriautils.listeners.InventoryListener
 import dev.norbiros.denoriautils.listeners.PlayerListener
 import dev.norbiros.denoriautils.utils.ConfigUtils
+import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import org.lupus.commands.core.scanner.Scanner
 import java.util.logging.Level
 
 class DenoriaUtils : JavaPlugin() {
 
-    private val integrations: List<PluginIntegration> = listOf(
-        PapiIntegration,
-        MMOCoreIntegration,
-        LandsIntegration
+    private val integrations: MutableList<PluginIntegration> = mutableListOf(
+        MMOCoreIntegration
     )
 
     override fun onEnable() {
@@ -29,6 +28,13 @@ class DenoriaUtils : JavaPlugin() {
             return
         }
         log("Loaded config")
+
+        if (Bukkit.getPluginManager().getPlugin("Lands") != null) {
+            integrations.add(PapiIntegration)
+            integrations.add(LandsIntegration)
+        } else {
+            log("Optional Lands plugin not found!")
+        }
 
         log("Loading integrations...")
         for (integration in integrations) {

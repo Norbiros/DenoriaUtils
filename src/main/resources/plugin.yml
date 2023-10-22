@@ -6,6 +6,7 @@ authors: [Norbiros]
 depend:
   - MMOCore
   - MythicLib
-  - Lands
   - Brewery
   - PlaceholderAPI
+softdepend:
+  - Lands
